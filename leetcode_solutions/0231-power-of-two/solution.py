@@ -4,5 +4,9 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        return n and not (n & n-1)
+        
+        if n==0 or (n & n-1):
+            return False
+        else:
+            return True
         
